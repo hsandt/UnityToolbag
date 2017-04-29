@@ -14,7 +14,6 @@ namespace UnityToolbag
     {
 #if UNITY_EDITOR
         private Texture2D _blank;
-#endif
 
         [SerializeField]
         private Color _innerColor = new Color(1, 1, 0, 0.15f);
@@ -31,7 +30,6 @@ namespace UnityToolbag
         [SerializeField]
         private int _sizeY = 5;
 
-#if UNITY_EDITOR
         void OnValidate()
         {
             if (_sizeX < 0) {
